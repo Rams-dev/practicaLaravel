@@ -1,6 +1,11 @@
 index de empleado
+@if(Session::has('mensaje'))
+{{ Session::get('mensaje') }}
+
+@endif
 
 
+<a href="{{url('empleado/create')}}">Registrar un nuevo Empleado</a>
 <table class="table table-light">
     <thead class="thead-light">
     <tr>
